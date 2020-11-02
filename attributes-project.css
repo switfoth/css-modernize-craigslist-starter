@@ -32,14 +32,83 @@ p.more {
 
 /* Write your CSS here. */
 
-*{font-family: "helvetica neue", "helvetica", sans-serif;
-background-color: Whitesmoke;
-color: #464646;}
+*{
+  font-family: "helvetica neue", "helvetica", sans-serif;
+  background-color: whitesmoke;
+  color: #464646;
+}
 
-a{text-decoration: remove underline;}
+a{
+  text-decoration: none;
+}
 
-ul{padding:0;}
+ul{
+  padding:0px;
+}
 
-li>ul{list-style: none;}
+ul>li{
+  list-style: none;
+}
 
-a > a span :hover :link {color:#800080;}
+a:hover,a>span:hover,a:visited,a>span:visited {
+  color:#800080;
+}
+
+a:hover,a>span:hover {
+  font-weight: bold;
+}
+
+.page-container{
+  max-width: 1200px;
+}
+
+#leftbar, #center, #rightbar{
+  float:left;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+footer{
+  clear: both;
+}
+
+#leftbar, #rightbar{
+  width: 25%;
+}
+
+#center{
+  width: 50%;
+  border: 1px solid #464646;
+  border-radius: 10px;
+}
+/* What up with this??? */
+
+#center>div{
+  float: left;
+  width: 33%;
+}
+
+#topban h2{
+  text-align: center;
+}
+
+ul.clfooter{
+  text-align: center;
+  border-top: 1px solid gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+ul.clfooter>li{
+  display: inline;
+  padding-right: 5px;
+}
+
+h4::before{
+  content:'☮️';
+}
